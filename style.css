@@ -1,20 +1,20 @@
 :root {
-    --navy: #173D5D;
-    --navy-2: #245A8A;
-    --orange: #F6A623;
-    --orange-2: #F9C76B;
-    --blue: #2F80ED;
-    --blue-2: #68A8FF;
-    --green: #2EB67D;
-    --green-2: #6ED7A8;
+    --navy: #113e5e;
+    --navy-2: #194980;
+    --orange: #a3d51a;
+    --orange-2: #8ec12c;
+    --blue: #1b73a5;
+    --blue-2: #8fb24b;
+    --green: #4d9b2c;
+    --green-2: #348032;
     --white: #FFFFFF;
     --paper: #F7FAFD;
-    --line: #DDEAF6;
-    --text: #1C2B3A;
-    --muted: #597086;
-    --sky: #ECF6FF;
-    --shadow: 0 18px 42px rgba(23, 61, 93, 0.12);
-    --shadow-strong: 0 26px 65px rgba(23, 61, 93, 0.2);
+    --line: #E8F0E3;
+    --text: #2a6937;
+    --muted: #8fb24b;
+    --sky: #F0F8E8;
+    --shadow: 0 18px 42px rgba(17, 62, 94, 0.12);
+    --shadow-strong: 0 26px 65px rgba(17, 62, 94, 0.2);
     --radius: 8px;
     --header-height: 86px;
 }
@@ -126,26 +126,15 @@ button {
     flex: 0 0 auto;
 }
 
-.brand-mark {
-    width: 48px;
-    height: 48px;
-    display: grid;
-    place-items: center;
-    border-radius: 50%;
-    color: var(--orange);
-    background: linear-gradient(145deg, #fff8e1, #ffffff);
-    border: 1px solid rgba(249, 168, 37, 0.32);
-    box-shadow: 0 12px 26px rgba(249, 168, 37, 0.18);
+.brand-logo {
+    max-width: 120px;
+    height: auto;
+    object-fit: contain;
+    transition: opacity 0.25s ease;
 }
 
-.brand-mark svg {
-    width: 34px;
-    height: 34px;
-    fill: none;
-    stroke: currentColor;
-    stroke-width: 3.2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
+.brand-logo:hover {
+    opacity: 0.9;
 }
 
 .brand-text {
@@ -154,6 +143,7 @@ button {
     font-size: 1.12rem;
     letter-spacing: 0;
     white-space: nowrap;
+    display: none;
 }
 
 .brand-text strong {
