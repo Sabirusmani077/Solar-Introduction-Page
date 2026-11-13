@@ -1,0 +1,17 @@
+{
+  "name": "Cloud Dev & Mobile Codespace",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      },
+      "extensions": [
+        "ritwickdey.liveserver",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  },
+  "forwardPorts": [5500],
+  "postCreateCommand": "echo 'Codespace is ready!'"
+}
